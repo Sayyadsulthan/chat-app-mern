@@ -16,7 +16,7 @@ connectDB();
 const app = express();
 const port = process.env.PORT || 8000;
 const httpServer = createServer(app);
-const io = new Server(httpServer, { cors: { origin: 'http://localhost:5173' } });
+const io = new Server(httpServer, { cors: { origin: process.env.CLIENT_URL } });
 
 app.use(express.json());
 app.use(cors());

@@ -96,7 +96,8 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     };
 
     useEffect(() => {
-        socket = io('http://localhost:8000');
+        const serverUrl = import.meta.env.VITE_API_URL;
+        socket = io(`${serverUrl}`);
         socket.emit('setup', user);
         socket.on('connected', () => setSocketConnected(true));
         socket.on('typing', () => setIsTyping(true));
