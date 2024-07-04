@@ -31,13 +31,13 @@ const HomePage = ({}) => {
                 borderWidth={'1px'}
             >
                 <Text fontSize={'xx-large'} fontStyle={'Roboto'}>
-                    Talk-A-Tive{' '}
+                    Connecto Chat
                 </Text>
             </Box>
 
             <Box bg={'white'} width={'100%'} p={4} borderRadius={'lg'} borderWidth={'1px'}>
-                <Tabs isFitted variant="soft-rounded" w={'100%'} colorScheme={'green'}>
-                    <TabList mb="1em">
+                <Tabs isFitted variant='soft-rounded' w={'100%'} colorScheme={'green'}>
+                    <TabList mb='1em'>
                         <Tab>Login</Tab>
                         <Tab>Sign Up</Tab>
                     </TabList>

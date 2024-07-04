@@ -138,7 +138,7 @@ const SideDrawer = () => {
 
                 <Text fontSize={'2x1'} fontFamily={'work sans'}>
                     {' '}
-                    TAlk-A-Tive
+                    Connecto Chat
                 </Text>
 
                 <Menu>
